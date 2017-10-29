@@ -5,7 +5,7 @@
 
 
     <groupId>com.teambition</groupId>
-    <artifactId>tb_java_tool</artifactId>
+    <artifactId>tb-java-tool</artifactId>
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
