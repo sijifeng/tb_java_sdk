@@ -83,11 +83,11 @@ Resources this API supports:
 
 ```java
 // Init model
-TeambitionMessage message = new TeambitionMessage("apiKey");
+Message message = new Message("apiKey");
 // send  [_organizationId 、 objects（发送对象 数组）、消息内容 、 发送对象类型]
 
 type 可选值(groups、projects、users)
-message.send("_organizationId", "object", "content", "type");
+message.send("你所在企业的组织编号", "object", "content", "type");
 ```
 
 ### Mail
@@ -96,8 +96,8 @@ _Contacts were added in version 1.1 of the client._
 
 ```java
 // 初始化发送信息 参数为 发送邮箱 、授权码
-MailMessage mailFactory = new MailMessage("840277025@qq.com", "ojsfvqvbctqkbfgg");
+MailMessage mailFactory = new MailMessage("你的邮箱", "你的授权码");
 // 发送一条消息 subject 、 content 、 sendto（数组）
-mailFactory.send("test mail", "test mail 12345", new String[]{"yingchun@teambition.com"});
+mailFactory.send("test mail", "test mail 12345", new String[]{"需要发送的邮箱"});
 ```
 

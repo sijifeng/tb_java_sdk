@@ -140,7 +140,7 @@ public class OkHttp3Utils {
     }
 
     public static void main(String[] args) throws IOException {
-        OkHttp3Utils.doGet("http://192.168.0.22:8319/event/model/pageList", new Callback() {
+        OkHttp3Utils.doGet("test url", new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
                 System.out.println("failed");
