@@ -84,9 +84,7 @@ Resources this API supports:
 ```java
 // Init model
 Message message = new Message("apiKey");
-// send  [_organizationId 、 objects（发送对象 数组）、消息内容 、 发送对象类型]
-
-type 可选值(groups、projects、users)
+// send  [_organizationId 、 objects（发送对象 类型数组）、消息内容 、 发送对象类型type 可选值(groups、projects、users)]
 message.send("你所在企业的组织编号", "object", "content", "type");
 ```
 
