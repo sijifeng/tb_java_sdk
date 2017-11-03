@@ -85,6 +85,8 @@ Resources this API supports:
 // Init model
 TeambitionMessage message = new TeambitionMessage("apiKey");
 // send  [_organizationId 、 objects（发送对象 数组）、消息内容 、 发送对象类型]
+
+type 可选值(groups、projects、users)
 message.send("_organizationId", "object", "content", "type");
 ```
 
