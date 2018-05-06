@@ -12,9 +12,11 @@ import java.util.Map;
  */
 public class Message {
     private String apiKey = null;
+    private String url = null;
 
-    public Message(String apiKey) {
+    public Message (String apiKey, String url) {
         this.apiKey = apiKey;
+        this.url = url;
     }
 
     /**
@@ -25,8 +27,7 @@ public class Message {
      * @return
      * @throws IOException
      */
-    public String send(String _organizationId, String[] objects, String content, String toType) throws IOException {
-        String url = "https://www.teambition.com/appstore/api/developer/chats/message";
+    public String send (String _organizationId, String[] objects, String content, String toType) throws IOException {
         Map<String, String> header = new HashMap<>();
         header.put("x-api-key", apiKey);
 
